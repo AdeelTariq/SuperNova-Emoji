@@ -263,20 +263,21 @@ public class EmojiconsPopup extends PopupWindow implements ViewPager.OnPageChang
             mEmojiTabs[positionPager].setSelected(true);
             emojisPager.setCurrentItem(positionPager);
             onPageSelected(positionPager);
-            if(!isShowing()){
-
-                //If keyboard is visible, simply show the emoji popup
-                if(isKeyBoardOpen()){
-                    showAtBottom();
-                    // changeEmojiKeyboardIcon(emojiButton, R.drawable.ic_action_keyboard);
-                }
-
-                //else, open the text keyboard first and immediately after that show the emoji popup
-                else{
-                    showAtBottomPending();
-                    // changeEmojiKeyboardIcon(emojiButton, R.drawable.ic_action_keyboard);
-                }
-            }
+            dismiss ();
+//            if(!isShowing()){
+//
+//                //If keyboard is visible, simply show the emoji popup
+//                if(isKeyBoardOpen()){
+//                    showAtBottom();
+//                    // changeEmojiKeyboardIcon(emojiButton, R.drawable.ic_action_keyboard);
+//                }
+//
+//                //else, open the text keyboard first and immediately after that show the emoji popup
+//                else{
+//                    showAtBottomPending();
+//                    // changeEmojiKeyboardIcon(emojiButton, R.drawable.ic_action_keyboard);
+//                }
+//            }
 
 
 
