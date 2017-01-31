@@ -2,7 +2,6 @@ package momanii.hani.supernova_emoji;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -34,18 +33,18 @@ public class MainActivity extends AppCompatActivity {
         emojiconEditText = (EmojiconEditText) findViewById(R.id.emojicon_edit_text);
         textView = (EmojiconTextView) findViewById(R.id.textView);
         emojIcon=new EmojIconActions(this,rootView,emojiconEditText,emojiButton);
-        emojIcon.ShowEmojIcon();
-        emojIcon.setKeyboardListener(new EmojIconActions.KeyboardListener() {
-            @Override
-            public void onKeyboardOpen() {
-                Log.e("Keyboard","open");
-            }
-
-            @Override
-            public void onKeyboardClose() {
-                Log.e("Keyboard","close");
-            }
-        });
+        emojIcon.initialize ();
+//        emojIcon.setKeyboardListener(new EmojIconActions.KeyboardListener() {
+//            @Override
+//            public void onKeyboardOpen() {
+//                Log.e("Keyboard","open");
+//            }
+//
+//            @Override
+//            public void onKeyboardClose() {
+//                Log.e("Keyboard","close");
+//            }
+//        });
 
         mCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

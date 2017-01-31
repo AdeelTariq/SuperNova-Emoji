@@ -101,7 +101,7 @@ public class EmojIconActions {
     }
 
 
-    public void ShowEmojIcon( )
+    public void initialize ( )
     {
 
         //Will automatically set size according to the soft keyboard size
@@ -188,7 +188,7 @@ public class EmojIconActions {
                         popup.showAtBottomPending();
                         final InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
                         inputMethodManager.showSoftInput(emojiconEditText, InputMethodManager.SHOW_IMPLICIT);
-                        changeEmojiKeyboardIcon(emojiButton,KeyBoardIcon);
+//                        changeEmojiKeyboardIcon(emojiButton,KeyBoardIcon);
                     }
                 }
 

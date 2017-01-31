@@ -1,3 +1,9 @@
+## Changes
+
+##### * This fork doesn't show the emoji popup in the start; instead opens keyboard
+
+##### * ShowEmojIcon method is renamed initialize
+
 ![Android Gems](http://www.android-gems.com/badge/hani-momanii/SuperNova-Emoji.svg)
 
 
